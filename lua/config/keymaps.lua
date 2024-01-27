@@ -5,8 +5,8 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent
 vim.keymap.set("n", "-", "$", { noremap = true, silent = true })
 
 -- Buffer navigation
-vim.api.nvim_set_keymap("n", "<leader>n", ":bprevious<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>p", ":bnext<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>p", ":bprevious<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>n", ":bnext<CR>", { noremap = true, silent = true })
 
 -- Split pane shortcut
 vim.keymap.set("n", "<leader>sh", ":split<CR>", { noremap = true, silent = true })
@@ -85,31 +85,31 @@ vim.api.nvim_set_keymap(
 ) -- harpoon goto index 2
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>h1",
+	"<Leader>h2",
 	':lua require("harpoon.ui").nav_file(2)<CR>',
 	{ noremap = true, silent = true }
 ) -- harpoon goto index 3
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>h1",
+	"<Leader>h3",
 	':lua require("harpoon.ui").nav_file(3)<CR>',
 	{ noremap = true, silent = true }
 ) -- harpoon goto index 4
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>h1",
+	"<Leader>h4",
 	':lua require("harpoon.ui").nav_file(4)<CR>',
 	{ noremap = true, silent = true }
 ) -- harpoon goto index 5
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>h1",
+	"<Leader>h5",
 	':lua require("harpoon.ui").nav_file(5)<CR>',
 	{ noremap = true, silent = true }
 ) -- harpoon goto index 6
 vim.api.nvim_set_keymap(
 	"n",
-	"<Leader>h1",
+	"<Leader>h6",
 	':lua require("harpoon.ui").nav_file(6)<CR>',
 	{ noremap = true, silent = true }
 )
