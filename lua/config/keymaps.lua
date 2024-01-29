@@ -112,4 +112,22 @@ vim.api.nvim_set_keymap(
 	"<Leader>h6",
 	':lua require("harpoon.ui").nav_file(6)<CR>',
 	{ noremap = true, silent = true }
+) -- harpoon goto index 7
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>h7",
+	':lua require("harpoon.ui").nav_file(7)<CR>',
+	{ noremap = true, silent = true }
+) -- harpoon goto index 8
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>h8",
+	':lua require("harpoon.ui").nav_file(8)<CR>',
+	{ noremap = true, silent = true }
+) -- harpoon goto index 9
+vim.api.nvim_set_keymap(
+	"n",
+	"<Leader>h9",
+	':lua require("harpoon.ui").nav_file(9)<CR>',
+	{ noremap = true, silent = true }
 )
