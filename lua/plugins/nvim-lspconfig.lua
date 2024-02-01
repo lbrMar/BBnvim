@@ -94,6 +94,15 @@ local config = function()
 		},
 	})
 
+	-- markdown
+	lspconfig.marksman.setup({
+		on_attach = on_attach,
+		capabilities = capabilities,
+		filetypes = {
+			"markdown",
+		},
+	})
+
 	-- c
 	lspconfig.clangd.setup({
 		on_attach = on_attach,
@@ -114,13 +123,26 @@ local config = function()
 		on_attach = on_attach,
 	})
 
+	-- lua linter and formatter
 	local luacheck = require("efmls-configs.linters.luacheck")
 	local stylua = require("efmls-configs.formatters.stylua")
+
+	-- python linter and formatter
 	local flake8 = require("efmls-configs.linters.flake8")
 	local black = require("efmls-configs.formatters.black")
+
+	-- json formatter
 	local fixjson = require("efmls-configs.formatters.fixjson")
+
+	-- javascript linter
 	local standard = require("efmls-configs.linters.js_standard")
+
+	-- css formatter
 	local stylelint = require("efmls-configs.formatters.stylelint")
+
+	-- markdown linter and formatter
+	local proselint = require("efmls-configs.linters.proselint")
+	local mdformat = require("efmls-configs.linters.mdformat")
 
 	-- configure efm server
 	lspconfig.efm.setup({
@@ -134,6 +156,7 @@ local config = function()
 			"typescriptreact",
 			"css",
 			"html",
+			"markdown",
 			"c",
 		},
 		init_options = {
@@ -149,6 +172,7 @@ local config = function()
 				lua = { luacheck, stylua },
 				python = { flake8, black },
 				json = { fixjson },
+				markdown = { proselint, mdformat },
 				css = { stylelint },
 				javascript = { standard },
 				javascriptreact = { standard },
