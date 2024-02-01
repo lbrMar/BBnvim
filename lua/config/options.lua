@@ -21,7 +21,7 @@ opt.termguicolors = true
 -- opt.colorcolumn = '80'
 opt.signcolumn = "yes"
 opt.cmdheight = 1
-opt.scrolloff = 10
+opt.scrolloff = 11
 opt.completeopt = "menuone,noinsert,noselect"
 
 -- Add transparency where desired
@@ -37,11 +37,10 @@ vim.cmd([[
 -- Behavior
 opt.hidden = true -- Hide buffer when abandoned
 opt.errorbells = false
-opt.swapfile = false
-opt.backup = false
 opt.splitright = true
 opt.splitbelow = true
 opt.autochdir = false
-opt.clipboard:append("unnamedplus")
+opt.clipboard:append("unnamedplus") -- synchronize nvim clipboard with system clipboard
 opt.modifiable = true
 opt.encoding = "UTF-8"
+opt.inccommand = "split" -- add window while using commands

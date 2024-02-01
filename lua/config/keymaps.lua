@@ -1,8 +1,13 @@
 -- Direcory Navigation
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>te", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>e", ":Ex<CR>", { noremap = true, silent = true })
 
--- Set goto end of line "-"
-vim.keymap.set("n", "-", "$", { noremap = true, silent = true })
+-- Set goto end of line
+vim.keymap.set("n", "gl", "$", { noremap = true, silent = true })
+vim.keymap.set("v", "gl", "$h", { noremap = true, silent = true }) -- when yanking line (vgly) it will paste inline
+-- Set goto start of line
+vim.keymap.set("n", "gh", "0", { noremap = true, silent = true })
+vim.keymap.set("v", "gh", "0", { noremap = true, silent = true })
 
 -- Buffer navigation
 vim.api.nvim_set_keymap("n", "<leader>p", ":bprevious<CR>", { noremap = true, silent = true })
