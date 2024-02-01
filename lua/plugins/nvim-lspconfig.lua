@@ -142,7 +142,7 @@ local config = function()
 
 	-- markdown linter and formatter
 	local proselint = require("efmls-configs.linters.proselint")
-	local mdformat = require("efmls-configs.linters.mdformat")
+	local mdformat = require("efmls-configs.formatters.mdformat")
 
 	-- configure efm server
 	lspconfig.efm.setup({
