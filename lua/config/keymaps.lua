@@ -38,6 +38,9 @@ vim.api.nvim_set_keymap("n", "<Leader>9", ":tabnext 9<CR>", { noremap = true, si
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
+-- cut text to new lines at 80, parse text
+-- vim.keymap.set("v", "<leader>pt", ":'<,'>s/.\\{80}/&\\r/g<CR>", { noremap = true, silent = true })
+
 -- Comment plugin
 vim.api.nvim_set_keymap("n", "<leader>ac", "gcc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<leader>ac", "gcc", { noremap = false })

@@ -141,7 +141,6 @@ local config = function()
 	local stylelint = require("efmls-configs.formatters.stylelint")
 
 	-- markdown linter and formatter
-	local proselint = require("efmls-configs.linters.proselint")
 	local mdformat = require("efmls-configs.formatters.mdformat")
 
 	-- configure efm server
@@ -172,7 +171,7 @@ local config = function()
 				lua = { luacheck, stylua },
 				python = { flake8, black },
 				json = { fixjson },
-				markdown = { proselint, mdformat },
+				markdown = { mdformat },
 				css = { stylelint },
 				javascript = { standard },
 				javascriptreact = { standard },
