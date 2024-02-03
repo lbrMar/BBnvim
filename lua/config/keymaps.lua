@@ -2,17 +2,10 @@
 vim.keymap.set("n", "<leader>te", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>e", ":Ex<CR>", { noremap = true, silent = true })
 
-<<<<<<< HEAD
--- Set goto end of line
-vim.keymap.set("n", "gl", "$", { noremap = true, silent = true })
-vim.keymap.set("v", "gl", "$h", { noremap = true, silent = true }) -- when yanking line (vgly) it will paste inline
--- Set goto start of line
-=======
 -- Set goto end of line to gl
 vim.keymap.set("n", "gl", "$", { noremap = true, silent = true })
-vim.keymap.set("v", "gl", "$", { noremap = true, silent = true })
+vim.keymap.set("v", "gl", "$h", { noremap = true, silent = true })
 -- Set goto start of line to gh
->>>>>>> work
 vim.keymap.set("n", "gh", "0", { noremap = true, silent = true })
 vim.keymap.set("v", "gh", "0", { noremap = true, silent = true })
 
