@@ -1,8 +1,12 @@
 -- Direcory Navigation
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
--- Set goto end of line "-"
-vim.keymap.set("n", "-", "$", { noremap = true, silent = true })
+-- Set goto end of line to gl
+vim.keymap.set("n", "gl", "$", { noremap = true, silent = true })
+vim.keymap.set("v", "gl", "$", { noremap = true, silent = true })
+-- Set goto start of line to gh
+vim.keymap.set("n", "gh", "0", { noremap = true, silent = true })
+vim.keymap.set("v", "gh", "0", { noremap = true, silent = true })
 
 -- Buffer navigation
 vim.api.nvim_set_keymap("n", "<leader>p", ":bprevious<CR>", { noremap = true, silent = true })
