@@ -135,7 +135,6 @@ local config = function()
 	local fixjson = require("efmls-configs.formatters.fixjson")
 
 	-- javascript linter
-	local standard = require("efmls-configs.linters.js_standard")
 
 	-- css formatter
 	local stylelint = require("efmls-configs.formatters.stylelint")
@@ -173,10 +172,6 @@ local config = function()
 				json = { fixjson },
 				markdown = { mdformat },
 				css = { stylelint },
-				javascript = { standard },
-				javascriptreact = { standard },
-				typescript = { standard },
-				typescriptreact = { standard },
 			},
 		},
 	})

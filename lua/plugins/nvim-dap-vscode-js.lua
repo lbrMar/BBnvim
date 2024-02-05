@@ -8,7 +8,16 @@ return {
 			-- Path to vscode-js-debug installation.
 			-- debugger_cmd = { "js-debug-adapter" }, -- Command to use to launch the debug server.
 			-- Takes precedence over `node_path` and `debugger_path`.
-			adapters = { "pwa-node", "pwa-chrome", "pwa-msedge", "node-terminal", "pwa-extensionHost" },
+			adapters = {
+				"chrome",
+				"pwa-node",
+				"pwa-chrome",
+				"pwa-msedge",
+				"node-terminal",
+				"pwa-extensionHost",
+				"node",
+				"node-terminal",
+			},
 			-- which adapters to register in nvim-dap
 			-- log_file_path = "(stdpath cache)/dap_vscode_js.log" -- Path for file logging
 			-- log_file_level = false -- Logging level for output to file. Set to false to disable file logging.

@@ -51,7 +51,7 @@ vim.api.nvim_set_keymap("v", "<leader>bc", "gbc", { noremap = false })
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>jsf",
-	":!npx standard --fix %<CR>:set autoread<<CR>",
+	":!npx semistandard --fix %<CR>:set autoread<<CR>",
 	{ noremap = true, silent = true }
 )
 
