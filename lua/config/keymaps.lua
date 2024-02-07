@@ -1,6 +1,5 @@
 -- Direcory Navigation
-vim.keymap.set("n", "<leader>te", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>e", ":Ex<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>e", ":Vex<CR>", { noremap = true, silent = true })
 
 -- Set goto end of line to gl
 vim.keymap.set("n", "gl", "$", { noremap = true, silent = true })
